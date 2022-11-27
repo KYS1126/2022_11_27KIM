@@ -60,7 +60,7 @@ public class CarEX {
 		System.out.println("================================");
 		int changetire = scanner.nextInt();
 		if (userCar.speed == 0) {
-			System.out.println("차량을 먼저 선택 해 주세요");
+			System.out.println("차량을 먼저 선택해 주세요");
 		} else if (changetire == 1) {
 			userCar.tire = "사계절용 타이어";
 		} else if (changetire == 2) {
@@ -79,7 +79,7 @@ public class CarEX {
 		System.out.println("================================");
 		int changecolor = scanner.nextInt();
 		if (userCar.speed == 0) {
-			System.out.println("차량을 먼저 선택 해 주세요");
+			System.out.println("차량을 먼저 선택해 주세요");
 		} else if (changecolor == 1) {
 			userCar.color = "빨강";
 		} else if (changecolor == 2) {
@@ -95,7 +95,7 @@ public class CarEX {
 	// 4.차량 상태 확인
 	public static void carState() {
 		if (userCar.speed == 0) {
-			System.out.println("차량을 먼저 선택 해 주세요");
+			System.out.println("차량을 먼저 선택해 주세요");
 		} else {
 			System.out.println("제조사:" + userCar.company);
 			System.out.println("차량이름:" + userCar.model);
