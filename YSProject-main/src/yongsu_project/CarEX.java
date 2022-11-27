@@ -18,7 +18,7 @@ public class CarEX {
 		
 			int selectNo = scanner.nextInt();
 			
-			if(selectNo == 1) carSelect();
+			if(selectNo == 1) selectCar();
 			else if (selectNo == 2) tire();
 			else if (selectNo == 3) color();
 			else if (selectNo == 4) 
@@ -30,7 +30,9 @@ public class CarEX {
 	}
 	
 	//1.차량선택
-	
+	public static void selectCar() {
+		
+	}
 	//2.타이어 변경
 	
 	//3.색깔 변경
