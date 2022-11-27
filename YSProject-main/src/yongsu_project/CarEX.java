@@ -14,7 +14,7 @@ public class CarEX {
 		boolean run = true;
 		while (run) {
 			System.out.println("================================");
-			System.out.println("1.차량 선택 | 2.타이어 변경 | 3.색깔 변경 | 4.차량 상태 확인 | 5.종료");
+			System.out.println("1.차량 선택 | 2.타이어 변경 | 3.색깔 변경 | 4.차량 상태 확인 | 5.상대 자동차 정보 | 6.종료");
 			int selectNo = scanner.nextInt();
 
 			if (selectNo == 1)
@@ -26,6 +26,8 @@ public class CarEX {
 			else if (selectNo == 4)
 				carState(); // 차량 상태 확인
 			else if (selectNo == 5) {
+				enemyCarState(); //적군 자동차 정보 확인
+			} else if (selectNo == 6) {
 				run = false;
 				System.out.println("시스템 종료");
 			}
@@ -106,5 +108,26 @@ public class CarEX {
 		}
 
 	}
+	
+	//5.enemyCar 상태 확인
+	static Car enemyCar = new enemyCar();
+	
+	public static void enemyCarState() {
+		if (userCar.speed == 0) {
+			System.out.println("차량을 먼저 선택해 주세요");
+			System.out.println("=====상대 자동차 정보 =====");
+			System.out.println("제조사:" + enemyCar.company);
+			System.out.println("차량이름:" + enemyCar.model);
+			System.out.println("색상:" + enemyCar.color);
+			System.out.println("평균속력:" + enemyCar.speed);
+			System.out.println("최고속력:" + enemyCar.maxSpeed);
+			System.out.println("타이어 종류:" + enemyCar.tire);
+		}
+
+	}
+	
+	
+	
+	
 
 }
