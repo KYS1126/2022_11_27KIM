@@ -19,7 +19,6 @@ public class Car {
 	}
 
 	//메소드
-	
 	public void TESLA() {
 		this.company = "TESLA";
 		this.model = "모델3";
